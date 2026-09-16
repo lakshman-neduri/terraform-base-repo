@@ -23,5 +23,5 @@ module "vpc" {
     "10.0.13.0/24"
   ]
 
-  nat_gateway_count = var.nat_gateway_count
+  nat_gateway_count = var.nat_gateway_count[terraform.workspace]
 }
