@@ -1,7 +1,7 @@
 module "vpc" {
   source = "git::https://github.com/lakshman-neduri/terraform-modules.git//vpc?ref=main"
 
-  name = locals.name
+  name = local.name
 
   vpc_cidr = "10.0.0.0/16"
 
